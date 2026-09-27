@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --color-architectural-dark: #121514;
+    --color-architectural-stone: #242A27;
+    --color-accent-forest: #2B3A33;
+    --color-accent-bronze: #8C6D46;
+    --color-warm-ivory: #FAF9F5;
+    --color-warm-sand: #F2EFE9;
+    --color-card-surface: #FFFFFF;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-warm-ivory);
+    color: #191919;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Custom interactive before/after slider handle styling */
+.slider-handle-line {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Hide scrollbar for clean horizontal scrolls if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

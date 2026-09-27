@@ -1,0 +1,6 @@
+{
+  "name": "Northline Contracting | Architectural Remodeling & Fine Home Building",
+  "description": "Award-winning home renovation and general contracting in the Greater Metro area. Specializing in luxury kitchens, spa bathrooms, whole-home transformations, and additions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
