@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Shield, Users, Sparkles, X } from 'lucide-react';
 import { COMPANY_INFO } from '../data/contractorData';
+import { IMAGES } from '../assets/images';
 
 interface AboutSectionProps {
   onOpenEstimate: () => void;
@@ -53,7 +54,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenEstimate }) =>
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/3] sm:aspect-[1/1] overflow-hidden bg-neutral-200 shadow-2xl">
               <img
-                src="/src/assets/images/craftsman_detail_work_1790495752212.jpg"
+                src={IMAGES.craftsman}
                 alt="Master carpenter fitting custom architectural joinery on jobsite"
                 className="w-full h-full object-cover object-center hover:scale-102 transition-transform duration-700"
                 referrerPolicy="no-referrer"

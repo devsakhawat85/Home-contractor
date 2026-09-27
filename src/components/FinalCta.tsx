@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Phone, ShieldCheck } from 'lucide-react';
 import { COMPANY_INFO } from '../data/contractorData';
+import { IMAGES } from '../assets/images';
 
 interface FinalCtaProps {
   onOpenEstimate: () => void;
@@ -12,7 +13,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onOpenEstimate }) => {
       {/* Background Image with Dark Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_modern_renovation_1790495714934.jpg"
+          src={IMAGES.hero}
           alt="Luxury architectural residence background"
           className="w-full h-full object-cover object-center brightness-50"
           referrerPolicy="no-referrer"

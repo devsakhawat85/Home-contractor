@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, ShieldCheck, Award, MapPin } from 'lucide-react';
 import { COMPANY_INFO } from '../data/contractorData';
+import { IMAGES } from '../assets/images';
 
 interface HeroProps {
   onOpenEstimate: () => void;
@@ -13,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEstimate, onExploreWork }) => 
       {/* Background Cinematic Image with Measured Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_modern_renovation_1790495714934.jpg"
+          src={IMAGES.hero}
           alt="Architectural modern residential home renovation by Northline Contracting"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"

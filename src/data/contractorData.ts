@@ -56,6 +56,8 @@ export interface FaqItem {
   category: 'Pricing' | 'Process' | 'Permits & Quality' | 'Getting Started';
 }
 
+import { IMAGES } from '../assets/images';
+
 export const COMPANY_INFO = {
   name: 'Northline Contracting',
   tagline: 'Architectural Remodeling & Fine Home Building',
@@ -98,7 +100,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Kitchen Remodeling',
     tagline: 'Culinary centers engineered for gathering and gastronomy',
     description: 'Custom fluted white oak cabinetry, book-matched quartzite islands, architectural circadian lighting, and seamless concealed appliance integration.',
-    image: '/src/assets/images/kitchen_luxury_island_1790495728853.jpg',
+    image: IMAGES.kitchen,
     timeline: '8 – 12 Weeks',
     startingRange: '$65,000 – $180,000+',
     deliverables: [
@@ -115,7 +117,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Bathroom Remodeling',
     tagline: 'Private restorative sanctuaries with bespoke limestone & rain suites',
     description: 'Curbless wet-room showers, freestanding composite stone soaking tubs, hidden drain systems, hydronic heated floors, and custom floating vanities.',
-    image: '/src/assets/images/bathroom_spa_retreat_1790495742338.jpg',
+    image: IMAGES.bathroom,
     timeline: '6 – 9 Weeks',
     startingRange: '$45,000 – $120,000+',
     deliverables: [
@@ -132,7 +134,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Architectural Home Additions',
     tagline: 'Expanding footprint while honoring existing structural character',
     description: 'Second-story vertical pop-tops, cantilevered master suite extensions, and sun-drenched glass pavilion living rooms engineered with modern envelope science.',
-    image: '/src/assets/images/hero_modern_renovation_1790495714934.jpg',
+    image: IMAGES.hero,
     timeline: '16 – 26 Weeks',
     startingRange: '$160,000 – $450,000+',
     deliverables: [
@@ -149,7 +151,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Whole-Home Renovation',
     tagline: 'Holistic interior transformations from the studs out',
     description: 'Comprehensive structural reconfiguration, modern HVAC heat pump electrification, bespoke hardwood floors, and unified interior design throughout.',
-    image: '/src/assets/images/craftsman_detail_work_1790495752212.jpg',
+    image: IMAGES.craftsman,
     timeline: '20 – 36 Weeks',
     startingRange: '$220,000 – $650,000+',
     deliverables: [
@@ -166,7 +168,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Basement & Custom ADUs',
     tagline: 'Subterranean luxury living, wine vaults & rental suites',
     description: 'Transforming underutilized lower levels into acoustic home screening rooms, sommelier wine cellars, wellness gyms, or permitted income-generating DADU units.',
-    image: '/src/assets/images/hero_modern_renovation_1790495714934.jpg',
+    image: IMAGES.hero,
     timeline: '10 – 16 Weeks',
     startingRange: '$75,000 – $210,000+',
     deliverables: [
@@ -183,7 +185,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Exterior & Outdoor Living',
     tagline: 'Year-round Pacific Northwest outdoor entertaining spaces',
     description: 'Architectural cedar rain-screens, standing-seam metal roofing, covered outdoor kitchen pavilions with infrared heaters, and integrated motorized louvers.',
-    image: '/src/assets/images/craftsman_detail_work_1790495752212.jpg',
+    image: IMAGES.craftsman,
     timeline: '8 – 14 Weeks',
     startingRange: '$55,000 – $190,000+',
     deliverables: [
@@ -204,7 +206,7 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Mercer Island, WA',
     duration: '11 Weeks',
     sqft: '680 sq ft',
-    image: '/src/assets/images/kitchen_luxury_island_1790495728853.jpg',
+    image: IMAGES.kitchen,
     description: 'Removal of two central load-bearing walls replaced by a concealed 24-foot W-beam, opening the kitchen directly into lake views. Hand-milled rift white oak island with waterfall quartzite.',
     architecturalHighlights: [
       '24-foot flush structural steel beam installation',
@@ -224,7 +226,7 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Bellevue, WA',
     duration: '26 Weeks',
     sqft: '3,850 sq ft',
-    image: '/src/assets/images/hero_modern_renovation_1790495714934.jpg',
+    image: IMAGES.hero,
     description: 'A ground-up interior architectural restoration of a 1968 post-and-beam residence. We preserved the original cedar tongue-and-groove ceilings while introducing triple-glazed glass curtains and hydronic radiant floors.',
     architecturalHighlights: [
       'Preservation of architectural glulam timber structural members',
@@ -244,7 +246,7 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Kirkland, WA',
     duration: '8 Weeks',
     sqft: '340 sq ft',
-    image: '/src/assets/images/bathroom_spa_retreat_1790495742338.jpg',
+    image: IMAGES.bathroom,
     description: 'Conversion of an outdated master bath and walk-in closet into an expansive Japanese-Nordic wellness sanctuary. Featuring custom honed limestone slab walls and a curbless double rain shower.',
     architecturalHighlights: [
       'Hand-carved limestone soaking tub weighing 850 lbs with joist reinforcement',
@@ -264,7 +266,7 @@ export const PROJECTS: ProjectItem[] = [
     location: 'Medina / Clyde Hill, WA',
     duration: '18 Weeks',
     sqft: '920 sq ft added',
-    image: '/src/assets/images/craftsman_detail_work_1790495752212.jpg',
+    image: IMAGES.craftsman,
     description: 'A cantilevered second-story primary wing addition designed to capture mountain vistas. Seamless roofline convergence and custom cedar siding stained to match the existing exterior flawlessly.',
     architecturalHighlights: [
       'Engineered micro-lam cantilever foundation extension',
@@ -284,8 +286,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterItem[] = [
     id: 'kitchen-case',
     roomName: 'Mercer Island Waterfront Kitchen',
     location: 'Mercer Island, WA',
-    beforeImage: '/src/assets/images/craftsman_detail_work_1790495752212.jpg',
-    afterImage: '/src/assets/images/kitchen_luxury_island_1790495728853.jpg',
+    beforeImage: IMAGES.craftsman,
+    afterImage: IMAGES.kitchen,
     beforeDescription: 'Enclosed 1980s oak kitchen with dropping soffits, partitioned drywall walls blocking natural lake views, and worn laminate counters.',
     afterDescription: 'Fully open concept with flush steel header, custom white oak rift cabinets, continuous Calacatta quartzite island, and integrated Wolf induction suite.',
     investmentTier: '$125,000 – $145,000',
@@ -295,8 +297,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterItem[] = [
     id: 'bath-case',
     roomName: 'Kirkland Lakeview Master Bath',
     location: 'Kirkland, WA',
-    beforeImage: '/src/assets/images/hero_modern_renovation_1790495714934.jpg',
-    afterImage: '/src/assets/images/bathroom_spa_retreat_1790495742338.jpg',
+    beforeImage: IMAGES.hero,
+    afterImage: IMAGES.bathroom,
     beforeDescription: 'Carpeted platform jacuzzi tub, dated brass fixtures, yellowed acrylic shower stall, and poor ventilation causing condensation.',
     afterDescription: 'Curbless wet-room suite with freestanding stone soaking tub, dual Hansgrohe rain heads, heated limestone floors, and recessed circadian lighting.',
     investmentTier: '$68,000 – $82,000',
